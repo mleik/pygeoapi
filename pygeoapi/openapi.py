@@ -1373,7 +1373,7 @@ def load_openapi_document() -> dict:
 
     pygeoapi_openapi = os.environ.get('PYGEOAPI_OPENAPI')
 
-    with open(pygeoapi_openapi, encoding='utf8') as ff:
+    with open(pygeoapi_openapi, encoding='utf16') as ff:
         if pygeoapi_openapi.endswith(('.yaml', '.yml')):
             openapi_ = yaml_load(ff)
         else:  # JSON string, do not transform

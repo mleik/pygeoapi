@@ -39,6 +39,7 @@ LOGGER = logging.getLogger(__name__)
 PLUGINS = {
     'provider': {
         'AzureBlobStorage': 'pygeoapi.provider.azure_.AzureBlobStorageProvider',  # noqa
+        'AzureDeltaStorage': 'pygeoapi.provider.azuredelta_.AzureDeltaStorageProvider', # noqa
         'CSV': 'pygeoapi.provider.csv_.CSVProvider',
         'CSWFacade': 'pygeoapi.provider.csw_facade.CSWFacadeProvider',
         'Elasticsearch': 'pygeoapi.provider.elasticsearch_.ElasticsearchProvider',  # noqa
